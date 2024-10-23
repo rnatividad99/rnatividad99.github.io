@@ -147,7 +147,6 @@
                         </div>
                         
                         <a href="https://github.com/rnatividad99/rnatividad99.github.io/blob/001a410a96899590a343ed2e04155fe1a0f960f4/Natividad%2C%20Renz%20Alvin%20-%20CV.pdf" target="_blank" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rnatividad1999@gmail.com" target="_blank" class="sim-btn btn-hover-new" data-text="Send Message"><span>Send Message</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -417,6 +416,35 @@
 								</div>
 								<div class="clearfix"></div>
 							</div>
+			     <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="name" type="text" placeholder="Name(Optional)">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" name="email" type="email" placeholder="Email*" required>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" name="phone" type="phone" placeholder="Phone*" required>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message me here*" required></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success"></div>
+                                        <button class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -452,13 +480,15 @@
 	<script src="js/headline.js"></script>
 	<!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
-    <!-- ======= Ionicons ======= -->
+    <!-- Ionicons -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	    <!-- send mail  -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/contact_me.js"></script>
 
 </body>
 </html>
