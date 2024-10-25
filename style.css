@@ -2496,3 +2496,34 @@ select.mobile-device {
     font-size: 14px;
     color: #333;
 }
+.icon-hover {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-hover:hover {
+    transform: scale(1.1);
+    color: #4f5b93;
+}
+.alert {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #3c763d;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #a94442;
+}
